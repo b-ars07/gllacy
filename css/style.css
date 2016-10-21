@@ -1,0 +1,202 @@
+
+  body {
+  font: 16px Roboto, Verdana, sans-serif;
+  line-height: 1.4em;
+  color: rgb(0,0,0);
+  background: url('../img/background.png');
+  }
+
+  h1 {
+    margin-bottom: 38px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+ }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .container {
+    width: 1146px;
+    padding: 0 27px;
+    margin: 0 auto;
+  }
+
+  .main-navigation {
+    float: left;
+    width: 855px;
+    margin-top: 23px;
+  }
+
+  .user-block {
+    float: right;
+    width: 270px;
+    margin-top: 23px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .free {
+    margin-bottom: 40px;
+  }
+
+  .left-sale {
+    float: left;
+    width: 560px;
+  }
+
+  .right-sale {
+    float: right;
+    width: 560px;
+  }
+
+  .hit {
+    margin-bottom: 40px;
+    font-size: 0px;
+  }
+
+  .ice {
+    display: inline-block;
+    width: 267px;
+    margin-right: 26px;
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: top;
+  }
+
+  .ice:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .about-us {
+    box-sizing:border-box;
+    width: 1146px;
+    padding-left: 21px;
+    margin-bottom: 40px;
+  }
+
+  .column-left {
+    float: left;
+    margin-right: 13px;
+  }
+
+  .column-right {
+    float: right;
+    margin-left: 13px;
+  }
+
+  .column-left p, .column-right p {
+    position: relative;
+    width: 483px;
+    padding-left: 56px;
+  }
+
+  .column-left p:before, .column-right p:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .column-left p:nth-child(1):before {
+    background: url('../img/icon-ice.svg');
+  }
+
+  .column-left p:nth-child(2):before {
+    background: url('../img/icon-leaf.svg');
+  }
+
+
+  .column-right p:nth-child(1):before {
+    background: url('../img/icon-cow.svg');
+  }
+
+  .column-right p:nth-child(2):before {
+    background: url('../img/icon-thermometr.svg');
+  }
+
+
+  .usefull-info {
+    margin-bottom: 40px;
+  }
+
+  .blog {
+    float: left;
+    width: 560px;
+  }
+
+  .mail-delivery {
+    float: right;
+    width: 560px;
+  }
+
+  .map {
+   margin-left:-27px;
+  }
+
+  footer {
+    margin-top: 19px;
+  }
+
+  .social-links {
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+  }
+
+  .social-btn {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+  }
+
+  .bsns-contacts {
+    float: left;
+    width: 560px;
+    font-size: 0px;
+  }
+
+  .copyright {
+    float: right;
+    width: 267px;
+  }
+
+  .production {
+    box-sizing: border-box;
+    display: inline-block;
+    width:267px;
+    padding-left: 127px;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .docs {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 267px;
+    padding-right: 127px;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .choice-form {
+   margin-bottom: 40px;
+  }
+
+  .goods {
+    font-size: 0px;
+  }
+
+  .paginator {
+    float: right;
+  }
