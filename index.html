@@ -3,66 +3,68 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Гллейси</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel = "stylesheet" href = "css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+  <input type="radio" name="toogle" id="btn-1" checked>
+  <input type="radio" name="toogle" id="btn-2">
+  <input type="radio" name="toogle" id="btn-3">
   <div class="container">
-    <input type="radio" name="slider" id="slider-1" checked>
-    <input type="radio" name="slider" id="slider-2">
-    <input type="radio" name="slider" id="slider-3">
     <div class="background">
       <header class="main-header clearfix">
-        <nav class="main-navigation">
-          <img class="index-logo" src="img/logo.svg" width="153" height="63" alt="логотип">
-          <ul>
-            <li>
-              <a href="#">Каталог</a>
+        <nav class="main-navigation clearfix">
+          <a href="index.html"><img class="logo" src="img/logo.svg" width="153" height="63" alt="логотип"></a>
+          <ul class="main-menu">
+            <li class="catalog">
+              <a class="catalog-link btn" href="catalog.html">Каталог</a>
               <ul class="sub-menu">
-                <li><a href="#">Новинки</a></li>
+                <li><a class="news" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
+                <li><a class="melorin" href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
+            <li><a class="btn" href="#">Доставка и оплата</a></li>
+            <li><a class="btn" href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
           <ul>
-            <li>
-              <a href="#">поиск</a>
-              <form action="url" method="">
+            <li class="search">
+              <a class="search-link" href="#">поиск</a>
+              <form class="search-form" action="url" method="get">
                 <input type="search" name="site-search" placeholder="Что ищем?">
               </form>
             </li>
-            <li>
+            <li class="enter">
               <a href="#">Вход</a>
-              <form action="url" method="">
+              <form class="enter-form" action="url" method="get">
                 <input type="email" name="email" placeholder="Электронная почта" required>
                 <input type="password" name="password" placeholder="Пароль" required>
                 <input type="submit" value="Войти">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+                <div class="wrapper-link">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
               </form>
             </li>
-            <li>
+            <li class="basket">
               <a href="#">Пусто</a>
-              <form action="url" method="">
+              <form class="basket-form" action="url" method="get">
                 <div class="product">
                   <a href="#">удалить</a>
-                  <img src="/img/round-ice.jpg" width="33" height="33" alt="мороженное">
+                  <img src="img/round-ice.png" width="33" height="33" alt="мороженное">
                   <span>Пломбир с апельсиновым джемом</span>
                   <span>1,5кг x 200 руб.</span>
                   <span>300 руб</span>
                 </div>
                 <div class="product">
                   <a href="#">удалить</a>
-                  <img src="/img/round-ice3.jpg" width="33" height="33" alt="мороженное">
+                  <img src="img/round-ice3.png" width="33" height="33" alt="мороженное">
                   <span>Клубничный пломбир с присыпкой из белого шоколада</span>
                   <span>1,5кг x 300 руб.</span>
                   <span>450 руб</span>
@@ -70,7 +72,9 @@
                 <div class="total-price">
                   Итого: 750 руб.
                 </div>
-                <input type="submit" value="Оформить заказ">
+                <div class="btn-wrapper">
+                  <input type="submit" value="Оформить заказ">
+                </div>
               </form>
             </li>
           </ul>
@@ -79,23 +83,26 @@
             <p>8 812 450-25-25</p>
           </div>
         </div>
+        </header
         <main>
-          <div class="slider-1">
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a href="#">Давайте оба!</a>
-          </div>
-          <div class="slider-2">
-            <p>Шоколадный плобмир и лимонный сорбет</p>
-            <a href="#">Давайте оба!</a>
-          </div>
-          <div class="slider-1">
-            <p>Пломбир с помадкой и клубничный щербет</p>
-            <a href="#">Давайте оба!</a>
-          </div>
-          <div class="slider-buttons">
-            <label for="slider-1"></label>
-            <label for="slider-2"></label>
-            <label for="slider-3"></label>
+          <div class="slider">
+            <div class="slide" id="slide1">
+              <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
+              <a href="#" class="slide-btn">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide2">
+              <p class="slide-title">Шоколадный плобмир и лимонный сорбет</p>
+              <a href="#" class="slide-btn">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide3">
+              <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
+              <a href="#" class="slide-btn">Давайте оба!</a>
+            </div>
+            <div class="slider-buttons">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
           </div>
           <div class="free clearfix">
             <section class="left-sale">
@@ -110,29 +117,40 @@
             </section>
           </div>
           <div class="hit">
-            <div class="ice">
-              <img class="icecream" src="/img/round-ice.jpg" width="267" height="267">
-              <p class="price">310₽<span class="weight">/кг</span></p>
+            <div class="ice ice-sale">
+              <img class="icecream" src="img/round-ice.png" width="267" height="267" alt="мороженное">
+              <p class="price">
+                <span class="cost">310<img src="img/icon-ruble.svg" width="31" height="36" alt="ruble"/></span>/кг
+              </p>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <a href="#">Быстрый просмотр</a>
+
             </div>
-            <div class="ice">
-              <img class="icecream" src="/img/round-ice2.jpg" width="267" height="267">
-              <p class="price">380₽<span class="weight">/кг</span></p>
+            <div class="ice ice-sale">
+              <img class="icecream" src="img/round-ice2.png" width="267" height="267" alt="мороженное">
+              <p class="price">
+                <span class="cost">380<img src="img/icon-ruble.svg" width="31" height="36" alt="ruble"/></span>/кг
+              </p>
+
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-              <a href="#">Быстрый просмотр</a>
+
             </div>
-            <div class="ice">
-              <img class="icecream" src="/img/round-ice3.jpg" width="267" height="267">
-              <p class="price">355₽<span class="weight">/кг</span></p>
+            <div class="ice ice-sale">
+              <img class="icecream" src="img/round-ice3.png" width="267" height="267" alt="мороженное">
+              <p class="price">
+                <span class="cost">355<img src="img/icon-ruble.svg" width="31" height="36" alt="ruble"/></span>/кг
+              </p>
+
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              <a href="#">Быстрый просмотр</a>
+
             </div>
-            <div class="ice">
-              <img class="icecream" src="/img/round-ice4.jpg" width="267" height="267">
-              <p class="price"> 415₽<span class="weight">/кг</span></p>
+            <div class="ice ice-sale">
+              <img class="icecream" src="img/round-ice4.png" width="267" height="267" alt="мороженное">
+              <p class="price">
+                <span class="cost">415<img src="img/icon-ruble.svg" width="31" height="36" alt="ruble"/></span>/кг
+              </p>
+
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-              <a href="#">Быстрый просмотр</a>
+
             </div>
           </div>
           <article class="about-us clearfix">
@@ -154,40 +172,45 @@
               </p>
             </div>
           </article>
-          <div class=" usefull-info clearfix">
+          <div class="usefull-info clearfix">
             <div class="blog">
               <h3>Новое в нашем блоге</h3>
-              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+              <a href="#">10 способов сервировки фруктовых щербетов <br /> к столу</a>
             </div>
             <div class="mail-delivery">
-              <p>
-                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
-              </p>
-              <form action="url" method="">
-                <input type="email" name="email" placeholder="Электронная почта" required>
-                <input type="submit" value="Отправить">
-              </form>
+              <div class="message-wraper">
+                <p>
+                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+                </p>
+                <form action="url" method="get">
+                  <input type="email" name="email" placeholder="Электронная почта" required>
+                  <input type="submit" value="Отправить">
+                </form>
+              </div>
             </div>
           </div>
-          <img class="map" src="img/map.jpg" width="1200" height="430" alt="карта">
-          <div class="contacts-form">
-            <p>
-              Адрес главного офиса и офлайн магазина:
-              <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-            </p>
-            <p>
-              Для заказов по телефону:
-              <span>8 812 450-25-25</span>
-              (с 10 до 20 ежедневно)
-            </p>
-            <input type="submit" value="Форма обратной связи">
-          </div>
-          <form class="feedback" action="url" method="">
-            <p>Мы обязательно вам ответим!</p>
-            <input type="text" name="username" placeholder="Как вас зовут?" required>
-            <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
-            <textarea placeholder="Напишите что-нибудь"></textarea>
-
+          <div class="map">
+            <img src="img/map.jpg" width="1200" height="430" alt="карта">
+            <div class="contacts-form">
+              <p>
+                Адрес главного офиса и офлайн магазина:
+                <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              </p>
+              <p>Для заказов по телефону:
+                <span>8 812 450-25-25</span>
+                (с 10 до 20 ежедневно)</p>
+                <input class="contact-btn" type="submit" value="Форма обратной связи">
+                <form class="feedback" action="url" method="get">
+                  <p>Мы обязательно вам ответим!</p>
+                  <input type="text" name="username" placeholder="Как вас зовут?" required>
+                  <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+                  <textarea placeholder="Напишите что-нибудь..."></textarea>
+                  <div class="feed-btn-wrapper">
+                    <input type="submit" value="Отправить">
+                  </div>
+                </form>
+              </div>
+            </div>
           </main>
           <footer class="clearfix">
             <section class="social-links">
@@ -209,5 +232,6 @@
           </footer>
         </div>
       </div>
+      <script type="text/javascript" src = "js/jquery-3.1.1.min.js"></script>
     </body>
     </html>
