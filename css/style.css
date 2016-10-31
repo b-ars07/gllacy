@@ -301,7 +301,7 @@ body > input[type="radio"] {
 .sub-menu .news:after {
   position: absolute;
   left: 7px;
-  bottom: -7px;
+  bottom: -5px;
   height: 1px;
   width: 128px;
   background: #d1d0ce;
@@ -324,6 +324,7 @@ body > input[type="radio"] {
 
 .sub-menu .active {
   color: #fff;
+  height: 28px;
   background: #d07058;
 }
 
@@ -623,7 +624,7 @@ input:focus:placeholder { color:transparent; }
 }
 
 
-.basket:hover > a.empty:before {
+.basket:hover > a:before {
   background: url("../img/icon-basket-full.svg") no-repeat;
 }
 
