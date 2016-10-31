@@ -239,10 +239,12 @@ body > input[type="radio"] {
 .main-menu > li:hover .btn {
   background: #ededed;
   color: #333;
+
 }
 
 .main-menu .catalog-link:active {
   background-color: #ededed;
+  text-decoration: none;
 }
 
 .main-menu .btn:active {
@@ -1286,7 +1288,7 @@ input:focus:placeholder { color:transparent; }
     transform: translateY(50px);
   }
   90%  {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);

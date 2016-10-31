@@ -1,12 +1,12 @@
 var link = document.querySelector(".contact-btn");
 var popup = document.querySelector(".feedback");
 var close = popup.querySelector(".feedback-btn");
-var name = popup.querySelector(".form-field");
+var username = popup.querySelector(".form-field");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("pop-window");
-  name.focus();
+  username.focus();
 });
 
 close.addEventListener("click", function(event) {
