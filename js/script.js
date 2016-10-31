@@ -1,12 +1,12 @@
 var link = document.querySelector(".contact-btn");
 var popup = document.querySelector(".feedback");
 var close = popup.querySelector(".feedback-btn");
-var login = popup.querySelector(".form-field");
+var name = popup.querySelector(".form-field");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("pop-window");
-  login.focus();
+  name.focus();
 });
 
 close.addEventListener("click", function(event) {
@@ -21,3 +21,25 @@ window.addEventListener("keydown", function(event) {
           }
         }
 });
+
+ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [59.93894, 30.3330833],
+            zoom: 16
+        });
+
+        myPlacemark = new ymaps.Placemark([59.9387942, 30.3230833], {
+          hitContent: 'Gllacy Shop'
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/icon-map.png',
+          iconImageSize: [218, 142],
+          iconImageOffset: [-50, -118]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
