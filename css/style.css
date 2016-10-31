@@ -202,6 +202,10 @@ body > input[type="radio"] {
   list-style: none;
 }
 
+.underline {
+  border-bottom: 1px solid rgba(230, 230, 235, 0.3);
+}
+
 .main-menu > li {
   position: relative;
   display: inline-block;
@@ -231,6 +235,9 @@ body > input[type="radio"] {
   height: 1px;
   content: "";
 }
+ .main-menu li:hover {
+   text-decoration: none;
+ }
 
 .main-menu .btn:hover:after,
 .main-menu .btn:active:after {
