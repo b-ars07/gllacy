@@ -173,6 +173,7 @@ body > input[type="radio"] {
   background-image: url("../img/slider-ice-2.png");
 }
 
+
 /* Header */
 
 .main-header {
@@ -502,8 +503,6 @@ body > input[type="radio"] {
   color: #5b9ddf;
 }
 
-
-
 .message-delivery .form-field:focus + .login-form__label {
   top: -20px;
 }
@@ -532,8 +531,6 @@ body > input[type="radio"] {
     cursor: text;
 }
 
-
-
 input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.7s ease;}
 input::-moz-placeholder                {opacity: 1; transition: opacity 0.7s ease;}
 input:-moz-placeholder                 {opacity: 1; transition: opacity 0.7s ease;}
@@ -543,7 +540,6 @@ input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.7s eas
 input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.7s ease;}
 input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.7s ease;}
 input:focus:placeholder { color:transparent; }
-
 
 .enter-form input[type="submit"] {
   display: inline-block;
@@ -559,7 +555,6 @@ input:focus:placeholder { color:transparent; }
   box-shadow: 0 1px 2px 1px #c9685d;
   cursor: pointer;
 }
-
 
 .enter .wrapper-link {
   display: inline-block;
@@ -624,7 +619,6 @@ input:focus:placeholder { color:transparent; }
 .basket:hover > a.empty:before {
   background: url("../img/icon-basket-hover.svg") no-repeat;
 }
-
 
 .basket:hover > a:before {
   background: url("../img/icon-basket-full.svg") no-repeat;
@@ -766,8 +760,8 @@ input:focus:placeholder { color:transparent; }
   font-weight: 900;
 }
 
-/*index.html*/
 
+/*index.html*/
 
 .free {
   margin-bottom: 40px;
@@ -1301,7 +1295,7 @@ input:focus:placeholder { color:transparent; }
   top:10%;
   left:50%;
   right: 50%;
-  z-index: 2;
+  z-index: 5;
   display: none;
   width: 477px;
   margin-left: -15.5%;
@@ -1394,6 +1388,9 @@ input:focus:placeholder { color:transparent; }
   box-shadow: 0 1px 2px 1px #c9685d;
   cursor: pointer;
 }
+
+
+/*footer*/
 
 footer {
   margin-top: 20px;
@@ -1522,6 +1519,7 @@ footer a:active {
   display: inline-block;
   vertical-align: top;
 }
+
 
 /* catalog.html */
 
