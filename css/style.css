@@ -42,7 +42,7 @@ body > input[type="radio"] {
 
 .container {
   background-repeat: no-repeat;
-  background-position: 416px 82px;
+  background-position: 216px 0px;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
