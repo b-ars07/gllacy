@@ -14,60 +14,52 @@
     <div class="container">
       <div class="background">
         <header class="main-header clearfix">
-          <nav class="main-navigation clearfix">
-            <img class="logo" src="img/logo.png" width="153" height="63" alt="логотип">
-            <ul class="main-menu">
-              <li class="catalog">
-                <a class="catalog-link btn  underline" href="#">Каталог</a>
-                <ul class="sub-menu">
-                  <li><a class="news" href="#">Новинки</a></li>
-                  <li> <a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a class="melorin" href="#">Мелорин</a></li>
-                </ul>
-              </li>
-              <li><a class="btn  underline" href="#">Доставка и оплата</a></li>
-              <li><a class="btn  underline" href="#">О Компании</a></li>
-            </ul>
-          </nav>
-          <div class="user-block">
-            <ul>
-              <li class="search">
-                <a class="search-link" href="#">поиск</a>
-                <form class="search-form" action="url" method="get">
-                  <input class="form-field" id="search" type="search" name="site-search" placeholder="Что ищем?">
-                  <label class="login-form__label" for="login">Что ищем?</label>
-                </form>
-              </li>
-              <li class="enter">
-                <a href="#">Вход</a>
-                <form class="enter-form" action="url" method="get">
-                  <div class="form-container">
-                    <input class="form-field" id="login" type="email" name="email" placeholder="Электронная почта" required>
-                    <label class="login-form__label" for="login">Электронная почта</label>
-                  </div>
-                  <div class="form-container">
-                    <input class="form-field" id="pass" type="password" name="password" placeholder="Пароль" required>
-                    <label class="login-form__label" for="pass">Пароль</label>
-                  </div>
-                  <input type="submit" value="Войти">
-                  <div class="wrapper-link">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
-                </form>
-              </li>
-              <li class="basket">
-                <a class="empty" href="#">Пусто</a>
-
-              </li>
-            </ul>
-            <div class="contacts">
-              <p>С 10 до 20, ежедневно</p>
-              <p>8 812 450-25-25</p>
+            <nav class="main-navigation clearfix">
+              <a href="index.html"><img class="logo" src="img/logo.svg" width="153" height="63" alt="логотип"></a>
+              <ul class="main-menu">
+                <li class="catalog">
+                  <a class=" catalog-link  btn-link  underline" href="#">Каталог</a>
+                  <ul class="sub-menu">
+                    <li><a class="news" href="#">Новинки</a></li>
+                    <li class="catalog.html"><a href="catalog.html">Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a class="melorin" href="#">Мелорин</a></li>
+                  </ul>
+                </li>
+                <li><a class="btn-link  underline" href="#">Доставка и оплата</a></li>
+                <li><a class="btn-link  underline" href="#">О Компании</a></li>
+              </ul>
+            </nav>
+            <div class="user-block">
+              <ul>
+                <li class="search">
+                  <a class="search-link" href="#">поиск</a>
+                  <form class="search-form" action="url" method="get">
+                    <input type="search" name="site-search" placeholder="Что ищем?">
+                  </form>
+                </li>
+                <li class="enter">
+                  <a href="#">Вход</a>
+                  <form class="enter-form" action="url" method="get">
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <input type="submit" value="Войти">
+                    <div class="wrapper-link">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </li>
+                <li class="basket">
+                  <a class="empty" href="#">Пусто</a>
+                </li>
+              </ul>
+              <div class="contacts">
+                <p>С 10 до 20, ежедневно</p>
+                <p>8 812 450-25-25</p>
+              </div>
             </div>
-          </div>
         </header>
         </div>
         <main>
@@ -221,16 +213,26 @@
               <a class="social-btn social-btn-fb" href="#">Facebook</a>
               <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
             </div>
-            <div class="bsns-contacts">
-              <div class="production">
-              <a class="supplier" href="#">Для поставщиков</a>
-              <a href="#">О производстве</a>
-            </div>
-            <div class="docs">
-              <a href="#">Наши документы</a>
-              <a href="#">Экологические стандарты</a>
-            </div>
-          </div>
+          <div class="footer-info-left">
+                <ul>
+                  <li class="icon-like">
+                    <a href="#">Для поставщиков</a>
+                  </li>
+                  <li>
+                    <a href="#">О произвиодстве</a>
+                  </li>
+                </ul>
+              </div>
+                <div class="footer-info-right">
+                  <ul>
+                    <li>
+                      <a href="#">Наши документы</a>
+                    </li>
+                    <li>
+                      <a href="#">Экологические стандарты</a>
+                    </li>
+                  </ul>
+                </div>
           </footer>
         </div>
       </div>
