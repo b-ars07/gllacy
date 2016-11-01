@@ -379,7 +379,7 @@ body > input[type="radio"] {
 }
 
 .search:hover .search-link:before {
-  background: url("../img/icon-search-hover.svg") no-repeat;
+  background: url("../img/icon/icon-search-hover.svg") no-repeat;
 }
 
 .search a:before {
@@ -389,7 +389,7 @@ body > input[type="radio"] {
   display: block;
   width: 32px;
   height: 32px;
-  background: url("../img/icon-search.svg") no-repeat;
+  background: url("../img/icon/icon-search.svg") no-repeat;
   content: "";
 }
 
@@ -442,7 +442,7 @@ body > input[type="radio"] {
   display: block;
   width: 20px;
   height: 19px;
-  background: url("../img/icon-enter.svg") no-repeat;
+  background: url("../img/icon/icon-enter.svg") no-repeat;
   content: "";
 }
 
@@ -452,7 +452,7 @@ body > input[type="radio"] {
 }
 
 .enter:hover > a:before {
-  background: url("../img/icon-enter-hover.svg") no-repeat;
+  background: url("../img/icon/icon-enter-hover.svg") no-repeat;
 }
 
 .enter:hover .enter-form {
@@ -597,7 +597,7 @@ input:focus:placeholder { color:transparent; }
   display: block;
   width: 21px;
   height: 20px;
-  background: url("../img/icon-basket.svg") no-repeat;
+  background: url("../img/icon/icon-basket.svg") no-repeat;
   content: "";
 }
 
@@ -608,7 +608,7 @@ input:focus:placeholder { color:transparent; }
   display: block;
   width: 21px;
   height: 20px;
-  background: url("../img/icon-basket-full.svg") no-repeat;
+  background: url("../img/icon/icon-basket-full.svg") no-repeat;
   content: "";
 }
 
@@ -618,11 +618,11 @@ input:focus:placeholder { color:transparent; }
 }
 
 .basket:hover > a.empty:before {
-  background: url("../img/icon-basket-hover.svg") no-repeat;
+  background: url("../img/icon/icon-basket-hover.svg") no-repeat;
 }
 
 .basket:hover > a:before {
-  background: url("../img/icon-basket-full.svg") no-repeat;
+  background: url("../img/icon/icon-basket-full.svg") no-repeat;
 }
 
 .basket:hover .basket-form {
@@ -778,7 +778,7 @@ input:focus:placeholder { color:transparent; }
   color: #fff;
   border-radius: 15px;
   background-color: #bd2d45;
-  background: url("../img/bg-raspberry.png") no-repeat;
+  background: url("../img/bg/bg-raspberry.png") no-repeat;
   background-position: 22% center;
 
 }
@@ -815,7 +815,7 @@ input:focus:placeholder { color:transparent; }
   color: #fff;
   border-radius: 15px;
   background-color: #6c4029;
-  background: url("../img/bg-chocolate.png") no-repeat;
+  background: url("../img/bg/bg-chocolate.png") no-repeat;
   background-position: 81% 46%;
 }
 
@@ -1075,20 +1075,20 @@ input:focus:placeholder { color:transparent; }
 }
 
 .column-left p:nth-child(1):before {
-  background: url('../img/icon-ice.svg');
+  background: url('../img/icon/icon-ice.svg');
 }
 
 .column-left p:nth-child(2):before {
-  background: url('../img/icon-leaf.svg');
+  background: url('../img/icon/icon-leaf.svg');
 }
 
 
 .column-right p:nth-child(1):before {
-  background: url('../img/icon-cow.svg');
+  background: url('../img/icon/icon-cow.svg');
 }
 
 .column-right p:nth-child(2):before {
-  background: url('../img/icon-thermometr.svg');
+  background: url('../img/icon/icon-thermometr.svg');
 }
 
 .usefull-info {
@@ -1101,7 +1101,7 @@ input:focus:placeholder { color:transparent; }
   width: 560px;
   min-height: 220px;
   padding: 26px 256px 0px 19px;
-  background: url("../img/bg-raspberry2.png");
+  background: url("../img/bg/bg-raspberry2.png");
 }
 
 .blog h3 {
@@ -1331,7 +1331,7 @@ input:focus:placeholder { color:transparent; }
   width: 23px;
   height: 23px;
   background: #000;
-  background: url("../img/icon-del.svg") no-repeat;
+  background: url("../img/icon/icon-del.svg") no-repeat;
   content: "";
 }
 
@@ -1432,23 +1432,23 @@ footer a:active {
 }
 
 .social-btn-tw {
-  background-image: url("../img/icon-tw.svg");
+  background-image: url("../img/icon/icon-tw.svg");
    background-repeat: no-repeat;
 }
 
 .social-btn-inst {
-  background-image: url("../img/icon-inst.svg");
+  background-image: url("../img/icon/icon-inst.svg");
    background-repeat: no-repeat;
 
 }
 
 .social-btn-fb {
-  background: url("../img/icon-fb.svg");
+  background: url("../img/icon/icon-fb.svg");
    background-repeat: no-repeat;
 }
 
 .social-btn-vk {
-  background: url("../img/icon-vk.svg");
+  background: url("../img/icon/icon-vk.svg");
    background-repeat: no-repeat;
 }
 
@@ -1500,7 +1500,7 @@ footer a:active {
    margin-left: -20px;
    height: 13px;
    width:15px;
-   background: url("../img/icon-heart.svg") no-repeat;
+   background: url("../img/icon/icon-heart.svg") no-repeat;
    content: "";
 }
 
