@@ -202,9 +202,9 @@ body > input[type="radio"] {
   list-style: none;
 }
 
-.underline {
+/*.underline {
   border-bottom: 1px solid rgba(230, 230, 235, 0.3);
-}
+}*/
 
 .main-menu > li {
   position: relative;
@@ -225,19 +225,23 @@ body > input[type="radio"] {
   text-decoration: none;
 }
 
- .main-menu li:hover {
-   text-decoration: none;
- }
-
-.main-menu .btn:hover:after,
-.main-menu .btn:active:after {
-  display: none;
+.main-menu .btn:after {
+  position: absolute;
+  bottom: 3px;
+  right: 14px;
+  left: 14px;
+  display: block;
+  background-color: #b2cabd;
+  height: 2px;
+  content: "";
 }
+ .main-menu li:hover .btn:after{
+   display: none;
+ }
 
 .main-menu > li:hover .btn {
   background: #ededed;
   color: #333;
-
 }
 
 .main-menu .catalog-link:active {
