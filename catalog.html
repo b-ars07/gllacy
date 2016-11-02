@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <div class="background">
       <header class="main-header clearfix">
           <nav class="main-navigation clearfix">
@@ -17,10 +18,10 @@
                 <a class=" catalog-link active btn-link  underline" href="#">Каталог</a>
                 <ul class="sub-menu">
                   <li><a class="news" href="#">Новинки</a></li>
-                  <li class="active"><a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a class="melorin" href="#">Мелорин</a></li>
+                  <li><a class="sub-menu-item active" href="#">Сливочное</a></li>
+                  <li><a class="sub-menu-item" href="#">Щербеты</a></li>
+                  <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
+                  <li><a class="sub-menu-item" class="melorin" href="#">Мелорин</a></li>
                 </ul>
               </li>
               <li><a class="btn-link  underline" href="#">Доставка и оплата</a></li>
@@ -51,25 +52,23 @@
                 <a class="full" href="#">2 товара</a>
                 <form class="basket-form" action="url" method="get">
                   <div class="product">
-                    <a href="#">удалить</a>
+                    <a class="delete" href="#">удалить</a>
                     <img src="img/round-ice.png" width="33" height="33" alt="мороженное">
-                    <span>Пломбир с апельсиновым джемом</span>
-                    <span>1,5кг x 200 руб.</span>
+                    <span><a href="#" class="product-item">Пломбир с апельсиновым джемом</a></span>
+                    <span>1,5кг <i>x 200 руб.</i></span>
                     <span>300 руб</span>
                   </div>
                   <div class="product">
-                    <a href="#">удалить</a>
+                    <a class="delete" href="#">удалить</a>
                     <img src="img/round-ice3.png" width="33" height="33" alt="мороженное">
-                    <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                    <span>1,5кг x 300 руб.</span>
+                    <span><a href="#" class="product-item">Клубничный пломбир с присыпкой из белого шоколада</a></span>
+                    <span>1,5кг <i>x 300 руб.</i></span>
                     <span>450 руб</span>
                   </div>
                   <div class="total-price">
                     Итого: 750 руб.
                   </div>
-                  <div class="btn-wrapper">
-                    <input type="submit" value="Оформить заказ">
-                  </div>
+                    <input class="btn-wrapper" type="submit" value="Оформить заказ">
                 </form>
               </li>
             </ul>
@@ -79,17 +78,18 @@
             </div>
           </div>
           <nav class="breadcrumbs">
-            <ul>
+            <ul class="breadcrumbs-list">
               <li><a href="index.html">Главная</a></li>
               <li><a href="#">Каталог</a></li>
               <li>Сливочное</li>
             </ul>
           </nav>
       </header>
+
       <main>
         <h1 class="catalog-heading">Сливочное мороженое</h1>
-        <div class="choice-form">
-          <form action="url" method="get">
+
+          <form class="choice-form" action="url" method="get">
             <div class="choice-wrapper">
               <p>Сортировка:</p>
               <select name="sort">
@@ -103,14 +103,14 @@
               <div class="price-controls">
                 <span>Цена:</span>
                 <label class="min-price"> <input type="text" name="min-price" value="100"></label>
-                <span class="txt-rub">руб</span>
+                <span class="txt-rub">руб&nbsp;	</span>
                 <span> – </span>
                 <label class="max-price"><input type="text" name="max-price" value="500"></label>
                 <span class="txt-rub">руб</span>
               </div>
               <div class="range-controls">
                 <div class="filter-price__scale">
-                    <div class="filter-price__range" style="margin-left: 20%; width: 51%">
+                    <div class="filter-price__range" style="margin-left: 20%; width: 41%">
                       <div class="filter-price__toggle filter-price__toggle-min"></div>
                       <div class="filter-price__toggle filter-price__toggle-max"></div>
                     </div>
@@ -145,11 +145,9 @@
                 <label for="jam">джемы</label>
               </div>
             </div>
-            <div class="form-btn">
-              <input type="submit" value="Применить">
-            </div>
+            <input class="form-btn" type="submit" value="Применить">
           </form>
-        </div>
+
         <div class="goods">
           <div class="ice">
             <img class="icecream" src="img/round-ice.png" width="267" height="267" alt="мороженное">
@@ -259,8 +257,7 @@
             <div class="view-wrapper"></div>
           </div>
         </div>
-        <div class="clearfix">
-          <div class="paginator">
+          <div class="paginator  clearfix">
             <a class="prev" href="#">Назад</a>
             <a class="page-btn active">1</a>
             <a class="page-btn" href="#">2</a>
@@ -269,35 +266,32 @@
             <a class="page-btn" href="#">5</a>
             <a class="next" href="#">Вперед</a>
           </div>
-        </div>
       </main>
-      <footer class="clearfix">
+
+      <footer class="pre clearfix">
         <div class="social-links">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           <a class="social-btn social-btn-fb" href="#">Facebook</a>
           <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
         </div>
-      <div class="footer-info-left">
-            <ul>
-              <li class="icon-like">
-                <a href="#">Для поставщиков</a>
-              </li>
-              <li>
-                <a href="#">О произвиодстве</a>
-              </li>
-            </ul>
-          </div>
-            <div class="footer-info-right">
-              <ul>
-                <li>
-                  <a href="#">Наши документы</a>
-                </li>
-                <li>
-                  <a href="#">Экологические стандарты</a>
-                </li>
-              </ul>
-            </div>
+        <ul class="footer-info-left">
+          <li class="icon-like">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+             <a href="#">О произвиодстве</a>
+          </li>
+        </ul>
+
+        <ul class="footer-info-right">
+            <li>
+               <a href="#">Наши документы</a>
+            </li>
+            <li>
+              <a href="#">Экологические стандарты</a>
+            </li>
+        </ul>
       </footer>
     </div>
   </body>

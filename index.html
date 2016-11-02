@@ -12,8 +12,8 @@
     <input type="radio" name="toggle" id="btn-2">
     <input type="radio" name="toggle" id="btn-3">
     <div class="container">
-      <div class="background">
-        <header class="main-header clearfix">
+
+        <header class="main-header clearfix  background">
             <nav class="main-navigation clearfix">
               <a href="index.html"><img class="logo" src="img/logo.svg" width="153" height="63" alt="логотип"></a>
               <ul class="main-menu">
@@ -21,10 +21,10 @@
                   <a class=" catalog-link  btn-link  underline" href="#">Каталог</a>
                   <ul class="sub-menu">
                     <li><a class="news" href="#">Новинки</a></li>
-                    <li class="catalog.html"><a href="catalog.html">Сливочное</a></li>
-                    <li><a href="#">Щербеты</a></li>
-                    <li><a href="#">Фруктовый лед</a></li>
-                    <li><a class="melorin" href="#">Мелорин</a></li>
+                    <li><a class="sub-menu-item" href="catalog.html">Сливочное</a></li>
+                    <li><a class="sub-menu-item" href="#">Щербеты</a></li>
+                    <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
+                    <li><a class="sub-menu-item" class="melorin" href="#">Мелорин</a></li>
                   </ul>
                 </li>
                 <li><a class="btn-link  underline" href="#">Доставка и оплата</a></li>
@@ -61,12 +61,12 @@
               </div>
             </div>
         </header>
-        </div>
+
         <main>
           <div class="background">
             <div class="slider">
               <div class="slide" id="slide1">
-                <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
+                <p class="slide-title">Крем-брюле и пломбир с малиновым джемом.</p>
                 <a class="slide-btn" href="#">Давайте оба!</a>
               </div>
                <div class="slide" id="slide2">
@@ -198,46 +198,43 @@
                   <textarea class="form-field" id="area" placeholder="Напишите что-нибудь..."></textarea>
                   <label class="login-form__label" for="area">Напишите что-нибудь...</label>
                 </div>
-                <div class="feed-btn-wrapper">
-                  <input type="submit" value="Отправить">
-                </div>
+                <input class="feed-btn-wrapper" type="submit" value="Отправить">
               </form>
             </div>
           </div>
         </main>
-        <div class="background">
-          <footer class="clearfix">
-            <div class="social-links">
-              <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-              <a class="social-btn social-btn-fb" href="#">Facebook</a>
-              <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
-            </div>
-          <div class="footer-info-left">
-                <ul>
-                  <li class="icon-like">
-                    <a href="#">Для поставщиков</a>
+
+        <footer class="background  clearfix">
+          <div class="social-links">
+            <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+          </div>
+
+              <ul class="footer-info-left">
+                <li class="icon-like">
+                  <a href="#">Для поставщиков</a>
+                </li>
+                <li>
+                  <a href="#">О произвиодстве</a>
+                </li>
+              </ul>
+
+
+                <ul class="footer-info-right">
+                  <li>
+                    <a href="#">Наши документы</a>
                   </li>
                   <li>
-                    <a href="#">О произвиодстве</a>
+                    <a href="#">Экологические стандарты</a>
                   </li>
                 </ul>
-              </div>
-                <div class="footer-info-right">
-                  <ul>
-                    <li>
-                      <a href="#">Наши документы</a>
-                    </li>
-                    <li>
-                      <a href="#">Экологические стандарты</a>
-                    </li>
-                  </ul>
-                </div>
-          </footer>
-        </div>
+
+        </footer>
       </div>
-    <div class="slider-preload2"></div>
-    <div class="slider-preload3"></div>
+
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
   </body>
